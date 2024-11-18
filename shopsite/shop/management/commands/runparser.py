@@ -25,9 +25,6 @@ def parser(pages=2):
     #  url сайта
     url = 'https://catalog-sadovod.ru/novinki/?page='
 
-    pages = pages  # Количество страниц для парсинга
-
-
     # Запрос
     for i in range(1, pages+1):
         try:
