@@ -18,7 +18,6 @@ class Shop_item(models.Model):
     # tag = models.ForeignKey(Tag, on_delete=models.CASCADE)
 
 
-# TODO Сделать наследование Basket(Shop_item) ?
 class Basket(models.Model):
     basket_item = models.ForeignKey(Shop_item, on_delete=models.CASCADE)
     user = models.ForeignKey(CiteUser, on_delete=models.CASCADE, blank=True)
